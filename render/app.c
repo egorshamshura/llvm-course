@@ -1,5 +1,4 @@
 #include "sim.h"
-#include <stdio.h>
 
 void init(char cg[][SIM_Y_SIZE])
 {
