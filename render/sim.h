@@ -10,3 +10,5 @@ int simRand();
 extern void simInit();
 extern void app();
 extern void simExit();
+void instLogger(char const*);
+void userToInstruction(char const*, char const*);
