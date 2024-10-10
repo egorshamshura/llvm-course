@@ -6,9 +6,6 @@ using namespace llvm;
 
 struct InstructionTracePass : public PassInfoMixin<InstructionTracePass> {
   PreservedAnalyses run(Module &M, ModuleAnalysisManager &AM) {
-    if (M.getName() != "app.c") {
-      return PreservedAnalyses::none();
-    }
     LLVMContext &Ctx = M.getContext();
     IRBuilder<> builder(Ctx);
     Type *retType = Type::getVoidTy(Ctx);
